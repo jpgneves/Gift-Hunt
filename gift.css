@@ -1,0 +1,98 @@
+body {
+	background-color: #000000;
+	font-family: Arial;
+	color: #00C2C5;
+	-webkit-text-stroke-color: #009295;
+	-webkit-text-stroke-width: 2px;
+	font-size: 48px;
+	text-align: center;
+}
+
+#content {
+	width: 100%;
+}
+
+#tracker {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-webkit-transition: all 1s ease-in-out;
+}
+
+#tracker.far {
+	background-color: #FF0000;
+}
+
+#tracker.close {
+	background-color: #0000FF;
+	-webkit-transform: scale(0.5);
+}
+
+#tracker.closest {
+	background-color: #00FF00;
+	-webkit-transform: scale(0.2);
+}
+
+#tracker.bam {
+	background-color: #FFFFFF;
+	-webkit-transform: scale(0.05);
+}
+
+#tracker.hidden {
+	opacity: 0;
+}
+
+#text {
+	opacity: 0;
+	-webkit-transition: all 1s ease-in;
+}
+
+#text.show {
+	opacity: 1;
+}
+
+#loader {
+	opacity: 0;
+	-webkit-transition: all 1s ease-in;
+}
+
+#loader.show {
+	opacity: 1;
+}
+
+#distance_label {
+	opacity: 1;
+	-webkit-transition: all 1s ease-in;
+}
+
+#distance_label.hidden {
+	opacity: 0;
+}
+
+#distance {
+	opacity: 1;
+	-webkit-transition: all 1s ease-in;
+}
+
+#distance.hidden {
+	opacity: 0;
+}
+
+#pic {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	width: 100%;
+	-webkit-transform: scale(0.00);
+	-webkit-transition: all 1s ease-in;
+}
+
+#pic.show {
+	opacity: 1;
+	-webkit-transform: scale(1.00);
+}
